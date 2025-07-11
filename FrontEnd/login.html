@@ -12,17 +12,17 @@
   <header>
     <h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
     <nav>
-      <ul>
-        <li><a href="index.html">projets</a></li>
-        <li><a href="#contact">contact</a></li>
-        <li>login</li>
+    <ul>
+        <li><a href="index.html" class="nav-link">projets</a></li>
+        <li><a href="#contact" class="nav-link">contact</a></li>
+        <li><a href="login.html" class="nav-link">login</a></li>
         <li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
-      </ul>
+    </ul>
     </nav>
   </header>
 
   <main id="login-page">
-    <h2>Connexion</h2>
+    <h2>log In</h2>
     <form id="login-form">
       <label for="email">E-mail</label>
       <input type="email" id="email" name="email" required>
@@ -31,7 +31,8 @@
       <input type="password" id="password" name="password" required>
 
       <input type="submit" value="Se connecter">
-      <p id="login-error" style="color:red; display:none;">Email ou mot de passe incorrect</p>
+      <p><a href="#" class="forgot-password">Mot de passe oublié ?</a></p>
+      <p id="login-error">Email ou mot de passe incorrect</p>
     </form>
   </main>
 

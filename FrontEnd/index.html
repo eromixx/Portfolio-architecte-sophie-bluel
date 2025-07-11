@@ -9,20 +9,19 @@
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
 	<meta name="description" content="">
 	<link rel="stylesheet" href="./assets/style.css">
-	<script src="script/login.js" defer></script>
 	<script src="./script/script.js" defer></script>
 </head>
 <body>
 <header>
 	<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
 	<nav>
-		<ul>
-			<li>projets</li>
-			<li>contact</li>
-			<li>login</li>
-			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
-		</ul>
-	</nav>
+  <ul>
+    <li><a href="index.html" class="nav-link">projets</a></li>
+    <li><a href="#contact" class="nav-link">contact</a></li>
+    <li><a href="login.html" class="nav-link">login</a></li>
+    <li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+  </ul>
+</nav>
 </header>
 <main>
 	<section id="introduction">
@@ -36,12 +35,13 @@
 			<p>En cas de besoin, une équipe pluridisciplinaire peut-être constituée : architecte DPLG, décorateur(trice)</p>
 		</article>
 	</section>
-	<section id="portfolio">
-		<h2>Mes Projets</h2>
-		<div class="filtres"></div>
-		<div class="gallery">
-		</div>
-	</section>
+<section id="portfolio">
+  <div class="portfolio-header">
+    <h2>Mes Projets</h2>
+  </div>
+  <div class="filtres"></div>
+  <div class="gallery"></div>
+</section>
 	<section id="contact">
 		<h2>Contact</h2>
 		<p>Vous avez un projet ? Discutons-en !</p>
@@ -56,7 +56,17 @@
 		</form>
 	</section>
 </main>
-
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3>Galerie photo</h3>
+    <div class="modal-gallery"></div>
+	<div class="modal-footer">
+  	<hr>
+  	<button id="add-photo-btn">Ajouter une photo</button>
+	</div>
+  </div>
+</div>
 <footer>
 	<nav>
 		<ul>
